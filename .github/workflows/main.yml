@@ -1,8 +1,11 @@
 name: Download Docker image from DockerHub
 
 on:
-  workflow_dispatch:
-
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
 jobs:
   downloadImage:
     runs-on: ubuntu-latest
