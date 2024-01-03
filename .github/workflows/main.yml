@@ -1,0 +1,15 @@
+name: Download Docker image from DockerHub
+
+on:
+  workflow_dispatch:
+
+jobs:
+  downloadImage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Download the Docker image from DockerHub
+      - name: Download Docker image
+        run: docker pull nayanejacyara57/form.html:tag
