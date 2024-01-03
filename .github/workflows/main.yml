@@ -15,4 +15,4 @@ jobs:
 
       # Download the Docker image from DockerHub
       - name: Download Docker image
-        run: docker pull nayanejacyara57/form.html:tag
+        run: docker pull nayanejacyara57/form.html:latest
